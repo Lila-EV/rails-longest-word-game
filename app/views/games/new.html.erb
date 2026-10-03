@@ -1,0 +1,12 @@
+<h1>New game</h1>
+  <p>
+    <% @letters.each do |letter| %>
+      <span class="letter-box"><%= letter %></span>
+    <% end %>
+  </p>
+
+  <form action="/contact" method="get">
+  <label for="member">Who are you looking for?</label>
+  <input type="text" id="member" name="member" placeholder="e.g. John Smith">
+  <input type="submit" value="Search">
+</form>

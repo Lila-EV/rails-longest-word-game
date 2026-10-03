@@ -1,0 +1,7 @@
+<form action="/contact" method="get">
+  <label for="member">Who are you looking for?</label>
+  <input type="text" id="member" name="member" placeholder="e.g. John Smith">
+  <input type="submit" value="Search">
+</form>
+
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
